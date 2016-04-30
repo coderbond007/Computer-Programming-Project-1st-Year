@@ -1,0 +1,22 @@
+#!/usr/bin/gnuplot 
+
+set term post eps font 'Helvatica,25'
+set ylabel 'NO OF COMPARISONS'
+set xlabel 'SIZE OF ARRAY '
+set logscale y
+set logscale x
+#unset log
+set xr [1:10000]
+#set yr [0:500000]   
+set autoscale y
+#set autoscale x
+set style data linespoints 
+set output 'sortgraph.eps'          
+
+plot  "bubblesort.txt" lt 0 pi -2 pt 7 lc rgb "green" title 'bubblesort' \
+,     "insertionsort.txt" lt -1 pi -2 pt 5 lc rgb "orange" title 'insertionsort' \
+,     "mergesort.txt" lt -1 pi -2 pt 2 lc rgb "violet" title 'mergesort' \
+,     "quicksort.txt" lt -1 pi -2 pt 1 lc rgb "red" title 'quicksort' \
+,     "selectionsort.txt" lt -1 pi -2 pt 3 lc rgb "blue" title 'selectionsort' \
+
+
