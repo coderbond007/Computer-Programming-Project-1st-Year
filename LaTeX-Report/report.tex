@@ -1,0 +1,37 @@
+\documentclass{IEEEtran}
+\usepackage{blindtext}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+
+
+\begin{document}
+\title{ITWS Project}
+
+\author{Pradyumn Agrawal 15UCS096 Susmit Lavania 15UCS148 Akash Bhudaulia 15UEC009}
+\maketitle
+
+
+\section{Introduction to the problem}
+We were given five sorting algorithms in which four were provided with algorithms and we were asked to code the one named selection sort. We are asked to make a library file containing all the functions of sorting algorithms returning the number of comparisons value for each sorting algorithm for a provided amount of input data. Since all five functions sort an array of integers which were initialied here as \textbf{data[n]}. Your program should compute the total number of comparisons made between the elements of the array for each function until it sort out the full array. For example, if input array is {14,18,1,5,78} then output array is {1,5,14,18,78}. This array is fully sorted by all the algorithms but the ways are different and thus the \textbf{Time Complexity} varies with respect to the amount of data given and the algorithm used. We uses count variable for each sorting algorithm which is intialised to zero value at starting (e.g. \textbf{countbubble}) is intialised variable for \textbf{bubble sort}.In this way total number of comparisons taking place are calculated. We have five variables for five functions. You may make function calls to each of these functions from main() as follows:
+\section{More Points}
+\begin{enumerate}
+\item We will calculate each one of sorting function separately to achieve the foolproof results.
+\item We will take same raw data for all the sorting algorithms to arrive to correct conclusion.
+\item Collect the total comparisons result for different value of n (input amount data) for each algorithm and output each of them in .txt's files.
+\item We will plot the \textbf{GNU Plot} for each of the function to know the efficiency of each sorting algorithm.On X axis we will have the number of elements in the array or the value of n and on Y axis the total number of comparisons to sort the array.
+\end{enumerate}
+
+\section{Preparing the data}
+We will finally plot the data of all the data with varying values of input amount data. We will input the data with the help of \textbf{bash script} and then finally iterate the data with varying values of n having stepping of 100 starting from 1 and targetting to the value of 10000.
+
+We will need *global* variable such as countbubble (for only bubble sorting).
+\
+Total time taken by your program :On Linux, command ”time ./a.out” will give you the amount of time taken by your program to run which includes time by \textbf{user},\textbf{real} and \textbf{sys}.
+
+Details of behaviour of algorithms with labelling is given in figure.
+
+\graphicspath{ {/home/pradyumn/Desktop/ITWS Project/Final Project/LaTeX Report/sortgraph.eps} }
+
+\section{Results}
+We achieve the results that most of the time \textbf{Merge Sort} is fastest sorting algorithm till we have studied so far. But \textbf{Quick Sort} is also is a fine algorithm for less amount of data according the data of what we have achieved in the graph.
+\end{document}
